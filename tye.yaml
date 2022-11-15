@@ -1,0 +1,31 @@
+name: myapplication
+
+# extensions:
+# - name: seq
+#   logPath: ./.logs
+
+services:
+- name: backend
+  project: backend/backend.csproj
+  bindings:
+  - port: 7000
+  
+- name: frontend
+  project: frontend/frontend.csproj
+  replicas: 2
+  bindings:
+  - port: 8080
+
+# - name: rabbit
+#   image: rabbitmq:3-management
+#   bindings:
+#     - port: 5672
+#       protocol: rabbitmq
+
+# - name: nginx
+#   image: nginx
+#   bindings:
+#     - port: 80
+#   volumes:
+#     - source: config/nginx.conf
+#       target: /etc/nginx/conf.d/default.conf
