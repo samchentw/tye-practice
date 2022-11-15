@@ -19,6 +19,7 @@ tye run
 ## 參考
 - [tye文件](https://github.com/dotnet/tye/tree/main/docs)
 - [tye安裝](https://github.com/dotnet/tye/blob/main/docs/getting_started.md)
+- [Visual Studio Code extension for Tye](https://devblogs.microsoft.com/dotnet/announcing-visual-studio-code-extension-for-tye/) 
 
 ## todo
 - [ ] 建立tye.yaml

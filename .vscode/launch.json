@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "applicationName":"test_tye",
+            "name": "test_tye",
+            "type": "tye",
+            "request": "launch",
+            "watch": true,
+            "preLaunchTask": "tye-run"
+           
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
