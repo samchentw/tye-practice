@@ -22,8 +22,8 @@ tye run
 - [Visual Studio Code extension for Tye](https://devblogs.microsoft.com/dotnet/announcing-visual-studio-code-extension-for-tye/) 
 
 ## todo
-- [ ] 建立tye.yaml
-- [ ] 實作部署
+- [x] 建立tye.yaml
+- [x] 實作部署([筆記](https://github.com/samchentw/tye-practice/blob/master/doc/deploy.md))
 - [ ] 資料庫連線
 - [ ] 基本CRUD and unit test
 
