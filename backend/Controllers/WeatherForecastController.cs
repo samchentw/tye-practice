@@ -21,9 +21,9 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
-        List<string> intArray = new List<string>{};
-        intArray.Add("3");
-        var test = intArray.Where(x=>x.StartsWith("")).ToList();
+        // List<string> intArray = new List<string>{};
+        // intArray.Add("3");
+        // var test = intArray.Where(x=>x.StartsWith("")).ToList();
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),
