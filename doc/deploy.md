@@ -33,6 +33,22 @@ minikube dashboard
 ```
 ![image](https://user-images.githubusercontent.com/89454932/202062794-58a850ac-1a98-4827-9707-fb94b3dcad58.png)
 
+取得所有服務
+```
+kubectl get services
+```
+
+取得所有pod
+```
+kubectl get po -A
+```
+
+映射出服務
+```
+kubectl port-forward  frontend-54fd78f49-bcz2b 81:8080 # 將frontend專案轉發本地81 Port
+kubectl port-forward  backend-6b5d75dd66-ll97g 82:7000 # 將backend專案轉發本地82 Port
+```
+
 
 ## 參考
 - [minkube文件](https://minikube.sigs.k8s.io/docs/start/)
