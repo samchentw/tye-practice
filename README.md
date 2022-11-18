@@ -24,6 +24,7 @@ tye run
 ## todo
 - [x] 建立tye.yaml
 - [x] 實作部署([筆記](https://github.com/samchentw/tye-practice/blob/master/doc/deploy.md))
+- [x] backend專案建立docker image([筆記](https://github.com/samchentw/tye-practice/blob/master/backend/docker.md))
 - [ ] 資料庫連線
 - [ ] 基本CRUD and unit test
 

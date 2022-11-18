@@ -4,6 +4,16 @@ name: myapplication
 # - name: seq
 #   logPath: ./.logs
 
+# ingress:
+#   - name: ingress
+#     bindings:
+#       - port: 8080
+#     rules:
+#       - path: /
+#         service: frontend
+#       - path: /backend
+#         service: backend
+
 services:
 - name: backend
   project: backend/backend.csproj
