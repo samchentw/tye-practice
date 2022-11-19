@@ -1,13 +1,13 @@
 # docker 方式執行
 
-## 指令
+## 開發指令
 使用docker-compose
 ```
 docker compose up --build # 啟動並build image
 docker compose down  # 關閉並刪除container
 ```
 
-## deploy方式(不使用dockerhub情況下)
+## 部署方式(不使用dockerhub情況下)
 build backend-api image
 ```
 cd backend
@@ -42,3 +42,10 @@ docker load -i frontend-image.tar
 docker compose -f docker-compose.deploy.yml up # 啟動docker-compose
 docker compose -f docker-compose.deploy.yml down # 關閉並刪除container
 ```
+## 結果
+- frontend: http://127.0.0.1:8080
+- backend api: http://127.0.0.1:5000 
+
+-------------
+在Production的環境下backend api 的swagger將導到404
+此專案Api網址為：http://localhost:5000/WeatherForecast
