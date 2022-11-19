@@ -1,20 +1,8 @@
 # tye練習
 學習使用[Tye](https://github.com/dotnet/tye)工具
 
-## 執行前端
-```
-tye run frontend
-```
-## 執行後端
-```
-tye run backend
-```
-## 建立sln並執行
-```
-dotnet new sln # 建立sln
-dotnet sln add frontend backend # 將兩個專案加入至sln
-tye run 
-```
+
+
 
 ## 參考
 - [tye文件](https://github.com/dotnet/tye/tree/main/docs)
@@ -24,7 +12,7 @@ tye run
 ## todo
 - [x] 建立tye.yaml
 - [x] 實作部署([筆記](https://github.com/samchentw/tye-practice/blob/master/doc/deploy.md))
-- [x] backend專案建立docker image([筆記](https://github.com/samchentw/tye-practice/blob/master/backend/docker.md))
+- [x] 使用docker部署([筆記](https://github.com/samchentw/tye-practice/blob/master/doc/docker.md))
 - [ ] 資料庫連線
 - [ ] 基本CRUD and unit test
 

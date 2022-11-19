@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  backend-api:
+    image: "backend-image"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production #Development
+    ports:
+      - "5000:80"
+  frontend:
+    image: "frontend-image"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production #Development
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend-api

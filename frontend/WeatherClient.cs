@@ -19,7 +19,7 @@ using System.Text.Json;
  
          public async Task<WeatherForecast[]> GetWeatherAsync()
          {
-             var responseMessage = await this.client.GetAsync("/weatherforecast");
+             var responseMessage = await this.client.GetAsync("http://backend-api/WeatherForecast");
              var stream = await responseMessage.Content.ReadAsStreamAsync();
              return await JsonSerializer.DeserializeAsync<WeatherForecast[]>(stream, options);
          }
